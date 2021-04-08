@@ -8,6 +8,7 @@ ACTION=$1
 if [ -z $ACTION ]
 then
 	echo "Invalid argument for action. Accepted: start | stop | restart | status"
+	exit 1
 fi
 
 # Process lock checker
